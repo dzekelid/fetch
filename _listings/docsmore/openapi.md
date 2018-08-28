@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Docsmore
 x-complete: 1
@@ -63,4 +62,3 @@ paths:
       - Fetch
       - Single
       - Document
----

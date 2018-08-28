@@ -9,11 +9,35 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/730-cisco-
 x-kinRank: "7"
 x-alexaRank: "632"
 tags: Fetch
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/fetch/master/_listings/cisco-webex/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: Webex Teams Admin API - Get roles (to fetch a role id)
+  x-api-slug: roles-get
+  description: |-
+    List all roles.
+
+    https://developer.webex.com/endpoint-roles-get.html
+
+    Example Response:
+    ``` json
+    {
+      'items' : [ {
+        'id' : 'OTZhYmMyYWEtM2RjYy0xMWU1LWExNTItZmUzNDgxOWNkYzlh',
+        'displayName' : 'Full Administrator'
+      } ]
+    }
+    ```
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/730-cisco-webex.jpg
+  humanURL: https://webex.com
+  baseURL: https://api.ciscospark.com//v1
+  tags: Enterprise, Office, Collaboration, Video Conferencing, SaaS, Technology, Telecommunications,
+    API Provider, Profiles, Service API, Relative Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/fetch/master/_listings/cisco-webex/roles-get-openapi.md
 x-common:
 - type: x-postman-collection
   url: https://app.getpostman.com/run-collection/1f5e101d8290a5303c90

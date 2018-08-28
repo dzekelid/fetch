@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Cisco WebEx
 x-complete: 1
@@ -14,4 +13,33 @@ produces:
 - application/json
 consumes:
 - application/json
----
+paths:
+  /roles:
+    get:
+      summary: Get roles (to fetch a role id)
+      description: |-
+        List all roles.
+
+        https://developer.webex.com/endpoint-roles-get.html
+
+        Example Response:
+        ``` json
+        {
+          'items' : [ {
+            'id' : 'OTZhYmMyYWEtM2RjYy0xMWU1LWExNTItZmUzNDgxOWNkYzlh',
+            'displayName' : 'Full Administrator'
+          } ]
+        }
+        ```
+      operationId: RolesGet2
+      x-api-path-slug: roles-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - Video Conferencing
+      - Roles
+      - (to
+      - Fetch
+      - Role
+      - Id)
